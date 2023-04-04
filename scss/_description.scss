@@ -1,0 +1,185 @@
+.main {
+  color: white;
+  width: 100%;
+  background: linear-gradient(
+    var(--gradient-color-top) 0%,
+    var(--gradient-color-bottom) 25%,
+    var(--gradient-color-bottom) 100%
+  );
+  padding: 5% 12%;
+}
+
+.mainContent {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0% 0%;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.register {
+  background: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+
+.register + .register {
+  margin-left: 1.5rem;
+}
+
+.main_links {
+  display: flex;
+
+  .brochure {
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .download {
+    margin-left: 0.5rem;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.aboutTitle,
+.detailsTitle,
+.contactsTitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutContent,
+.contactsContent {
+  font-weight: 200;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 4%;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.contactsContent {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.roundsTitle {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.webListContent {
+  margin-left: 4%;
+}
+
+.listsContent {
+  text-indent: 1rem;
+}
+
+.roundsContent {
+  font-weight: 200;
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 1.8rem;
+  margin-top: 20px;
+  margin-left: 4%;
+  font-family: "Roboto Condensed", sans-serif;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+}
+
+.iot {
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    padding: 8% 7%;
+  }
+  .title {
+    flex-direction: column;
+    // gap: 1.5rem;
+  }
+  .heading {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutTitle,
+  .detailsTitle,
+  .contactsTitle {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+  }
+
+  .aboutContent,
+  .contactsContent {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .roundsTitle {
+    font-size: 1.1rem;
+  }
+
+  .listsContent {
+    margin-left: 5%;
+    text-indent: 0;
+  }
+
+  .roundsContent {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  .themes {
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .main {
+    padding: 15% 7%;
+  }
+}

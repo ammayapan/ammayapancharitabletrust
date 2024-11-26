@@ -1,151 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/Home.css"/>
-    <link rel="icon" type="image/png" href="/resources/logo/ACTlogo.png">
-    <title>Ammaiyapan Charitable Trust</title>
-  </head>
-  <body>
-    <!-- hi this is  -->
-    <header class="navigation">
-      <img src="/resources/logo/ACT.png" alt="logo" class="logo skcetlogo">
-      <div class="nav">
-        <div class="nav__item">
-          <a href="/index.html">Home</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="resources/logo/ACTlogo.png">
+  <title>Ammayappan Charitable Trust: Reaching Out to Those in Need</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+  <!-- <script type="module" src="js/firebaseauthauth.js"></script> -->
+</head>
+
+<body>
+  <div class="splash" id="splash">
+    <div class="splash_elements">
+      <img class="splash_logo" src="resources/logo/Ammayappan_Logo_Svg.svg" alt="Ammayapan Logo">
+      <h1 class="splash_title">AMMAYAPAN</h1>
+      <div class="splash_line"></div>
+      <h1 class="splash_content">Forever Young At Heart</h1>
+    </div>
+  </div>
+  <div class="index_main" id="index_main">
+    <div class="nav_container">
+      <nav class="navbar">
+        <img class="navbar_logo" src="resources/logo/Ammayappan_Logo_Svg.svg" alt="Ammayapan Logo">
+        <div class="menu_toggle">
+          <!-- <p>-</p>
+          <p>-</p>
+          <p>-</p> -->
         </div>
-        <div class="nav__item">
-          <a href="/Html/event pages/Aboutus.html">About us</a>
-        </div>
-        <div class="nav__item">
-          <a href="/Html/event pages/OurServices.html">Our Services</a>
-        </div>
-        <div class="nav__item">
-          <a href="/Html/event pages/Events.html">Events</a>
-          <div class="dropdown">
-            <a href="/Html/Description/Annadhanam.html">Annadhanam</a>
-            <a href="/Html/Description/MedicalCamp.html">Medical Camp</a>
-          </div>
-        </div>
-        <div class="nav__item">
-          <a href="/Html/event pages/Donate.html">Donate</a>
-        </div>
-        <div class="nav__item">
-          <a href="/Html/event pages/Gallery.html">Gallery</a>
+        <ul class="nav_menu">
+          <li class="curr_nav_item">
+            <a href="" class="curr_nav_link">Home</a>
+            <span class="curr_item_underline"></span>
+          </li>
+          <li class="nav_item">
+            <a href="AboutAmmayapan" class="nav_link">About Us</a>
+            <span class="curr_item_underline"></span>
+          </li>
+          <li class="nav_item">
+            <a href="OurServices" class="nav_link">Services</a>
+          </li>
+          <li class="nav_item">
+            <a href="Events" class="nav_link">Events</a>
+          </li>
+          <li class="nav_item">
+            <a href="DonateUs" class="nav_link special_menu_item">Donate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="home_container">
+      <div class="home_cont_right">
+        <img class="circle_img circle_img_1" src="resources/images/Stock Images/Old_People.jpg" alt="Old People">
+        <img class="circle_img circle_img_2" src="resources/images/Stock Images/Donate_1.jpg" alt="Old People">
+        <img class="circle_img circle_img_3" src="resources/images/Stock Images/Donate_2.jpg" alt="Old People">
+      </div>
+      <div class="home_cont_left">
+        <h3 class="home_heading">Together we can</h3>
+        <h1 class="home_bolt_para">Make a <br>Difference</h1>
+        <a href="DonateUs" class="services_btn">Donate</a>
+        <p class="home_para">In our tradition, we prioritize serving spiritual seekers and monks, considering it a
+          meaningful path of its own.</p>
+        <p class="home_para_2">An exceptional embodiment of this commitment is seen through Annadanam, the
+          reverential act of offering food.</p>
+      </div>
+      <div class="circle_img design_circle_small"></div>
+      <div class="circle_img design_circle_large"></div>
+      <div class="circle_img design_circle_filled"></div>
+      <div class="home_body_cont">
+        <h1 class="home_body_para_left"><span>forever </span><br>young <br>at heart</h1>
+        <div class="home_body_para_right_cont">
+          <p class="home_body_para_right">Ammayappan is dedicated to enriching the lives of our residents by offering
+            compassionate care, meaningful activities, and a community that feels like family. We strive to meet the
+            physical, emotional, and social needs of each individual, ensuring their well-being and happiness.</p>
+          <p class="home_body_founder">Balamurugan, Co-Founder</p>
         </div>
       </div>
 
-      <div class="phone__nav">
-        <div class="menu__btn">
-          <div class="menu__btn__burger"></div>
-        </div>
-        <div class="navbar">
-          <div class="nav__links">
-            <a href="/index.html">Home</a>
-            <a href="/Html/event pages/Aboutus.html">About us</a>
-            <a href="/Html/event pages/OurServices.html">Our Services</a>
-            <a href="/Html/event pages/Events.html">Events</a>
-            <a href="/Html/event pages/Donate.html">Donate</a>
-            <a href="/Html/event pages/Gallery.html">Gallery</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <section class="hero">
-      <video loop autoplay playsinline muted id="vid"> 
-        <!--<source src="/resources/video/Krizen video.webm" type="video/webm">
-        <source src="/resources/video/Krizen video.mp4" type="video/mp4"> -->
-        <source src="/resources/video/Ammayapan.webm" type="video/webm">
-        <source src="/resources/video/Ammayapan.mp4" type="video/mp4">
-      </video>
-    </section>  
-
-    <section class="events__section">
-      <div class="event">
-        <!-- <img class="event__image" src="/resources/images/Annadhanam1.jpg" alt="" /> -->
-        <div class="event__div">
-          <div class="inner__content">
-            <h3 class="event__title">EVENTS</h3>
-            <p class="event__description">
-              In our tradition, serving spiritual seekers and monks has always been of utmost importance. This can be a path in itself. The most beautiful expression of this is the Annadanam – the sacred offering of food.
-            </p>
-            <a href="/Html/event pages/Events.html" class="event__overview">Explore</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer__section">
-      <div class="footer__content">
-        <div class="footer__top">
-            <div class="events__links">
-              <div class="college">
-                <a href="http://ammayapan.org/"><img src="/resources/logo/ACTlogo.png" alt=""></a>
-                <p>Ammayapan Charitable Trust</p>
-                <p>(Registration No. 51/2022/Dated/03.04.2022)</p>
-                    <p>No.4, J.H.Nagar, Nallavanpalayam</p>
-                    <p>Tiruvannamalai - 606 603</p>
-              </div>
+      <section>
+        <div class="progress_container">
+          <div class="progress_box" style="--num:50;">
+            <div class="core_icon_container">
+              <img class="core_icon" src="resources/icons/Integrity.svg" alt="">
             </div>
-            <div class="footer__contact">
-              <div class="f__right__content">
-                  <div class="contact__info">
-                    <h3 class="info__title">To Approach</h3>
-                    <div class="info__mail">
-                        <img class="sm__image" src="/resources/images/gmail.png" alt="">
-                        <a class="mail" href="mailto:admin@ammayapan.org">admin@ammayapan.org</a>
-                    </div>
-                    <div class="info__mail">
-                        <img class="sm__image" src="/resources/images/gmail.png" alt="">
-                        <a class="mail" href="mailto:admin@ammayapan.org">admin@ammayapan.org</a>
-                    </div>                    
-                  </div>
-                  <div class="contact__social">
-                    <h3 class="social__title">@ammayapantrust</h3>
-                    <a href="https://www.instagram.com/ammayapantrust/"><img class="sm__image insta" src="/resources/images/instagram.png" alt="instagram"></a>
-                    <a href="https://twitter.com/ammayapantrust"><img class="sm__image" src="/resources/images/twitter.png" alt="twitter"></a>
-                  </div>
-              </div>
+            <div class="dot" id="dot"></div>
+            <svg class="progress_bar" id="progress_bar">
+              <circle cx="270px" cy="270px" r="270px"></circle>
+              <circle cx="270px" cy="270px" r="270px"></circle>
+              <!-- <circle cx="12px" cy="12px" r="12px"></circle> -->
+            </svg>
+          </div>
+          <!-- <div class="slider_container">
+            <div class="slider_rotater" id="slider_container">
+              <div class="slider"></div>
             </div>
+          </div> -->
         </div>
-      </div>      
-      <div class="footer__phone">
-        <div class="phone__content">
-          <div class="middle__content">
-              <div class="info__mail">
-                <img class="sm__image" src="/resources/images/gmail.png" alt="">
-                <a class="mail" href="mailto:admin@ammayapan.org">admin@ammayapan.org</a>
-              </div>
-              <div class="info__mail">
-                <img class="sm__image" src="/resources/images/gmail.png" alt="">
-                <a class="mail" href="mailto:admin@ammayapan.org">admin@ammayapan.org</a>
-            </div> 
-          </div>
-          <div class="bottom__content">
-              <p>@ammayapantrust</p>
-              <a href="https://www.instagram.com/ammayapantrust/"><img class="sm__image insta" src="/resources/images/instagram.png" alt="instagram"></a>
-              <a href="https://twitter.com/ammayapantrust"><img class="sm__image" src="/resources/images/twitter.png" alt="twitter"></a>
-          </div>
+        <div class="progess_content">
+          <ul>
+            <li class="core_value" id="compassion">
+              <h1 class="home_footer_cont_right_heading">Compassion and Empathy</h1>
+              <p class="home_cont_right_para">Prioritizing the needs and well-being of beneficiaries, treating all
+                individuals with kindness, and being sensitive to their circumstances and challenges.</p>
+            </li>
+            <li class="core_value core_value_even" id="inclusivity">
+              <h1 class="home_footer_cont_right_heading core_value_content_even">Inclusivity and Equity</h1>
+              <p class="home_cont_right_para core_value_content_even">Developing programs that are accessible to diverse groups, promoting
+                non-discriminatory practices, and striving to eliminate barriers to participation.</p>
+            </li>
+            <li class="core_value" id="respect">
+              <h1 class="home_footer_cont_right_heading">Respect and Dignity</h1>
+              <p class="home_cont_right_para">Treating everyone with respect, safeguarding the dignity of all
+                beneficiaries and stakeholders, and fostering a culture of mutual respect within the organization.</p>
+            </li>
+            <li class="core_value core_value_even" id="intergrity">
+              <h1 class="home_footer_cont_right_heading core_value_content_even">Integrity and Transparency</h1>
+              <p class="home_cont_right_para core_value_content_even">Clear communication of goals, activities, and financial matters to
+                stakeholders and the public, ensuring that all actions are ethical and accountable.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <div class="college">
-            <a href="http://ammayapan.org/"><img src="/resources/logo/ACTlogo.png" alt=""></a>
-            <p>Ammayapan Charitable Trust</p>
-            <p>(Registration No. 51/2022/Dated/03.04.2022)</p>
-                <p>No.4, J.H.Nagar, Nallavanpalayam</p>
-                <p>Tiruvannamalai - 606 603</p>
+
+
+
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col col_logo">
+          <img src="resources/logo/Ammayappan_Logo_Svg_Light.svg" alt="Ammayapan Logo" class="logo">
+          <p class="logo_name">AMMAYAPAN</p>
+        </div>
+        <div class="col col_contact">
+          <h3>Contact Us</h3>
+          <p class="contant_details">56/78, 14thA Cross, 2nd Main, Garden Layout, JP Nagar, Thiruvannamalai</p>
+          <h5 class="sub_title">Email</h5>
+          <p class="email_id contant_details">ammayapan@gmail.com</p>
+          <h5 class="sub_title">Phone</h5>
+          <p class="phone contant_details">+91 7289383736</p>
+        </div>
+        <div class="col col_links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="AboutAmmayapan">About Us</a></li>
+            <li><a href="Events">Events</a></li>
+            <li><a href="DonateUs">Donate Us</a></li>
+          </ul>
+        </div>
+        <div class="col col_newsletter">
+          <h3>Newsletter</h3>
+          <p class="newsletter_content">Ammayapan is dedicated to enriching the lives of our</p>
+          <form class="newsletter_form" action="">
+            <input type="email" placeholder="Email id" required>
+            <button type="submit"><img class="send_icon" src="resources/icons/Send_icon.svg" alt="Send Icon"></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <hr>
+        <div class="extra">
+          <p class="copyright">Copyright ©2024 All rights reserved </p>
+          <div class="social_icons">
+            <img class="icon" src="resources/icons/Fackbook Icon.svg" alt="Fackbook Icon">
+            <img class="icon" src="resources/icons/LinkedIn Icon.svg" alt="Fackbook Icon">
+            <img class="icon" src="resources/icons/YouTube Icon.svg" alt="Fackbook Icon">
+            <img class="icon" src="resources/icons/Instagram Icon.svg" alt="Fackbook Icon">
           </div>
         </div>
       </div>
     </footer>
+  </div>
+</body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/js/index.js"></script>
-  </body>
 </html>

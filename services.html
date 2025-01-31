@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammayapan Charitable Trust: Reaching Out to those in Need</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function includeHTML(file, elementId) {
+                fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.error('Error loading file:', file, error));
+            }
+
+            includeHTML('header.html', 'header-placeholder');
+            includeHTML('footer.html', 'footer-placeholder');
+        });
+    </script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <div class="container">
+        <table class="services-table">
+            <tr>
+                <td class="service" style="background-image: url('images/services/AccommodationAndFood.jpg');">
+                    <h3>Accommodation and Food 🥣</h3>
+                    <p></p>
+                    <Ul>
+                        <li>Clean, well-maintained rooms with essential facilities</li>
+                        <li>Homely environment to ensure dignity and respect</li>
+                        <li>24/7 care and support to cater to their daily needs</li>
+                        <li>Nutritious and Balanced Meals</li>
+                        <li>Daily wholesome meals tailored to their dietary needs</li>
+                        <li>Special food provisions for elderly residents</li>
+                        <li>Hygienically prepared meals to promote health and well-being</li>
+                    </Ul>
+                </td>
+                <td class="service" style="background-image: url('images/services/MedicalCare.webp');">
+                    <h3>Medical Care 🩺</h3>
+                    <p></p>
+                    <Ul>
+                        <li>Regular Health Checkups</li>
+                        <li>24/7 Medical Support</li>
+                        <li>Specialist Consultations</li>
+                        <li>Medication Management</li>
+                        <li>Preventive Care</li>
+                        <li>Physiotherapy & Rehabilitation</li>
+                        <li>Mental Health Support</li>
+                    </Ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="service" style="background-image: url('images/services/MedicalCamps.webp');">
+                    <h3>Medical Camps 🏕️</h3>
+                    <p></p>
+                    <Ul>
+                        <li>Organized regular medical camps for residents and nearby communities</li>
+                        <li>Provided essential healthcare services to improve community well-being</li>
+                        <li>Ensured access to free medical consultations, screenings, and treatments</li>
+                        <li>Promoted preventive healthcare and health awareness among residents</li>
+                        <li>Facilitated distribution of medications and health resources</li>
+                        <li>Partnered with healthcare professionals for comprehensive care delivery</li>
+                        <li>Strengthened community health through ongoing support and follow-up services</li>
+                    </Ul>
+                </td>
+                <td class="service" style="background-image: url('images/services/NursingCare.webp');">
+                    <h3>Nursing Care 👩‍⚕️</h3>
+                    <p></p>
+                    <Ul>
+                        <li>24/7 Skilled Nursing Support</li>
+                        <li>Elderly Assistance</li>
+                        <li>Compassionate End-of-Life Care</li>
+                        <li>Wound Care & Recovery Support</li>
+                        <li>Chronic Disease Management</li>
+                        <li>Emotional & Mental Health Support</li>
+                        <li>Personalized Care Plans</li>
+                    </Ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="service" style="background-image: url('images/services/Counseling.webp');">
+                    <h3>Counseling 🤝</h3>
+                    <p></p>
+                    <Ul>
+                        <li>Emotional Support & Guidance</li>
+                        <li>Stress & Anxiety Management</li>
+                        <li>Grief & Trauma Counseling</li>
+                        <li>Depression & Mental Health Support</li>
+                        <li>Personalized Therapy Sessions</li>
+                        <li>Mindfulness & Relaxation Techniques</li>
+                        <li>Confidential & Compassionate Care</li>
+                    </Ul>
+                </td>
+                <td class="service" style="background-image: url('images/services/Entertainment.webp');">
+                    <h3>Entertainment 🎬</h3>
+                    <p></p>
+                    <Ul>
+                        <li>Devotional Music Sessions</li>
+                        <li>Cultural & Festival Celebrations</li>
+                        <li>Yoga & Gentle Exercise Routines</li>
+                        <li>Flower Arranging & Gardening</li>
+                        <li>Movie & Television time</li>
+                        <li>Tea Chats & Friendly Gatherings</li>
+                        <li>Laughter Therapy & Light Games</li>
+                        <!-- <li>Devotional Music Sessions 🎶</li>
+                        <li>Cultural & Festival Celebrations 🎉</li>
+                        <li>Yoga & Gentle Exercise Routines 🧘‍♀️</li>
+                        <li>Flower Arranging & Gardening 🌸🌿</li>
+                        <li>Movie & Television time 🎬</li>
+                        <li>Tea Chats & Friendly Gatherings ☕</li>
+                        <li>Laughter Therapy & Light Games 😄</li> -->
+                    </Ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="footer-placeholder"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Ammayapan Charitable Trust</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function includeHTML(file, elementId) {
+                fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.error('Error loading file:', file, error));
+            }
+
+            includeHTML('header.html', 'header-placeholder');
+            includeHTML('footer.html', 'footer-placeholder');
+        });
+    </script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <div class="container">
+        <table class="services-table">
+            <tr>
+                <td class="service">
+                    <img src="images/service1.jpg" alt="Accommodation and Food">
+                    <h3>Accommodation and Food</h3>
+                    <p>We provide a safe home, nutritious meals, and essential medical support for elderly women who have been abandoned or have no family support.</p>
+                </td>
+                <td class="service">
+                    <img src="images/service2.jpg" alt="Medical Care">
+                    <h3>Medical Care</h3>
+                    <p>We provide essential medical support for elderly women who have been abandoned or have no family support.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="service">
+                    <img src="images/service3.jpg" alt="Nursing Care">
+                    <h3>Nursing Care</h3>
+                    <p>We ensure professional nursing care to bring dignity and comfort to our residents.</p>
+                </td>
+                <td class="service">
+                    <img src="images/service4.jpg" alt="Medical Camps">
+                    <h3>Medical Camps</h3>
+                    <p>We conduct regular medical camps to provide healthcare services, ensuring the well-being of our residents and nearby communities.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="service">
+                    <img src="images/service5.jpg" alt="Counseling">
+                    <h3>Counseling</h3>
+                    <p>Our therapy programs help residents cope with stress and trauma, offering emotional support and psychological well-being.</p>
+                </td>
+                <td class="service">
+                    <img src="images/service6.jpg" alt="Entertainment">
+                    <h3>Entertainment</h3>
+                    <p>We organize activities to ensure a joyful and engaging environment for our residents.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="footer-placeholder"></div>
+</body>
+</html>

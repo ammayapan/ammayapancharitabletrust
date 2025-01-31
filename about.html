@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammayapan Charitable Trust: Reaching Out to those in Need</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function includeHTML(file, elementId) {
+                fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.error('Error loading file:', file, error));
+            }
+
+            includeHTML('header.html', 'header-placeholder');
+            includeHTML('footer.html', 'footer-placeholder');
+        });
+    </script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <div class="container">
+        <div class="video-frame">
+            <video width="100%" height="auto" controls controlsList="nodownload">
+                <source src="./videos/introduction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="about-content">
+            <h2>About Ammayapan Charitable Trust</h2>
+            <p>Since its inception, Ammayapan Charitable Trust has been dedicated to uplifting the underprivileged through various social initiatives. Our mission is to provide shelter, medical care, and emotional support to those in need, particularly elderly women who have no other means of support.</p>
+            <p>Our home operates in Thiruvannamalai, focusing on holistic development and well-being for the elderly and marginalized communities. Through donations and volunteer efforts, we aim to make a significant impact and bring hope to those in need.</p>
+        </div>
+    </div>
+    
+    <div id="footer-placeholder"></div>
+</body>
+</html>

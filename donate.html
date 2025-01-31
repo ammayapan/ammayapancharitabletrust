@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammayapan Charitable Trust: Reaching Out to those in Need</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function includeHTML(file, elementId) {
+                fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.error('Error loading file:', file, error));
+            }
+
+            includeHTML('header.html', 'header-placeholder');
+            includeHTML('footer.html', 'footer-placeholder');
+        });
+    </script>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+
+    <!-- Donation Section -->
+    <div class="container">
+        <h2>Support Our Cause</h2>
+        <h4>Your support helps us make a difference.</h4>
+        <div class="qr-code">
+            <h3><u><i>Scan to Pay</i></u></h3>
+            <img src="./images/QRCode/qrcode.jpg" alt="QR Code for Payment">
+        </div>
+        
+        <div class="bank-details">
+            <h3 style="margin-bottom: 10px;"><u><i>Online Transfer Details</i></u></h3>
+            <p><strong>Account Name:</strong> Ammayapan Charitable Trust</p>
+            <p><strong>Account Number:</strong> 411 345 377 86</p>
+            <p><strong>IFSC Code:</strong> SBI N00 12934</p>
+            <p><strong>Bank Name:</strong> State Bank of India, Collectorate Road, Thiruvannamalai.</p>
+        </div>
+    </div>
+    <div id="footer-placeholder"></div>
+</body>
+</html>

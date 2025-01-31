@@ -1,0 +1,534 @@
+/* =============== home page =============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+    font-family: Baskervville;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(212, 246, 246);
+    color: black;
+}
+
+#header-placeholder, #footer-placeholder {
+    width: 100%;
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:teal ;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border-bottom: 3px solid #ddd;
+    text-emphasis-color: white;
+}
+
+header img {
+    height: 50px;
+}
+
+footer {
+    background-color:teal ;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 3px solid #ddd;
+}
+
+footer hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 0;
+    height: 1px;
+    background: #ccc;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #c9f04b;
+}
+
+.contact-text {
+    color: #c9f04b;  
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo-container {
+    background-color: rgb(212, 246, 246);
+    padding: 5px;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.imglogo {
+    height: 50px; /* Reducing the size */
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container h2{
+    color:teal;
+    margin-bottom: 5px;
+}
+
+.container h4{
+    color:teal;
+    margin-bottom: 5px;
+}
+
+.slideshow {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow img {
+    max-width: 100%;   /* Ensures image doesn't exceed container width */
+    max-height: 100%;  /* Ensures image fits inside container */
+    width: auto;  /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: contain;  /* Ensures the whole image fits inside */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Ensure the first image is visible */
+.slideshow img:first-child {
+    opacity: 1;
+}
+
+.fade {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.caption {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Baskervville;
+    font-weight: bold;
+    color: teal;
+}
+
+.caption .small-text {
+    font-family: "Baskervville";
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.7rem;
+  }
+  
+.caption .large-text {
+    font-family: "Baskervville";
+    font-weight: 200;
+    font-size: 2.6rem;
+    padding-bottom: 1rem;
+  }
+
+.running-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.social-links a img {
+    width: 40px; /* Set a fixed width */
+    height: 40px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.home_para {
+    /* font-family: "Poppins"; */
+    font-family: Baskervville;
+    width: 450px;
+    font-weight: 2000;
+    font-style: normal;
+    font-size: 1.1rem;
+    padding-top: 1.5rem;
+}
+/* =============== home page =============== */
+/* =============== about us page =============== */
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+}
+
+.video-frame {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.video-frame video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-content h2 {
+    color: teal;
+    margin-bottom: 15px;
+}
+
+#header-placeholder, header, #footer-placeholder, footer {
+    border: 0px solid red;
+}
+/* =============== about us page =============== */
+/* =============== services page =============== */
+.services-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px; /* Adds space between tiles */
+}
+
+.service img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.service {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; /* repeat */
+    color: black; 
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    text-align:left;
+    position: relative;
+    height: 200px; 
+    background-blend-mode: lighten;
+    font-weight: bold;
+    font-family: Baskervville;
+}
+
+.service h3 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 0.15cm;
+}
+
+.service p {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0.12cm;
+}
+
+
+.service::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(212, 246, 246); Dark overlay for readability */
+    /* background: rgba(255, 255, 255, 0.7);  */
+    background: rgba(212, 246, 246, 0.7); 
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.service ul {
+    position: relative;
+    color: teal; /* or any bright color */
+    font-weight: normal;
+    z-index: 2;
+    list-style-type: none; /* This removes the default dot bullet */
+    padding-left: 0; /* Ensure no extra space on the left */
+}
+
+.service li {
+    position: relative;
+    padding-left: 30px; 
+}
+
+.service li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    top: 0;
+    color: teal;
+}
+
+/* =============== services page =============== */
+/* =============== event page =============== */
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.event-item {
+    cursor: pointer;
+    padding: 10px;
+    background: #008080;
+    color: white;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.event-item:hover {
+    background: #005f5f;
+}
+
+.slideshowevent-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background: teal;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: darkcyan;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#loader {
+    text-align: center;
+    font-size: 18px;
+    color: #008080;
+    margin: 10px 0;
+    display: none;
+}
+
+.slideshowevent-container .slideshowevent img {
+    display: none;
+}
+
+.slideshowevent-container .slideshowevent img:first-child {
+    display: block;
+}
+
+.slideshowevent {
+    width: 100%;
+    max-width: 600px;
+    height: auto;  /* Change from fixed height to auto */
+    min-height: 200px; /* Ensures visibility */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideshowevent img {
+    max-width: 100%;
+    height: auto; /* Allows scaling */
+    position: absolute;
+    object-fit: contain;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.slideshowevent img:first-child {
+    display: block;
+    opacity: 1;
+}
+
+.slide-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide-image.active {
+    opacity: 1;
+}
+
+/* Mobile Responsive */
+/* Ensure images display correctly in small screens */
+@media (max-width: 600px) {
+    .slideshowevent {
+        min-height: 150px; /* Reduce min-height for smaller screens */
+    }
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+    .slideshowevent {
+        height: 400px; /* Adjust height for larger screens */
+    }
+
+    .slideshowevent img {
+        width: 100%; /* Ensures scaling */
+        height: 100%;
+        object-fit: contain; /* No cropping */
+    }
+}
+
+/* Dropdown Container */
+#event-dropdown {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid teal;
+    border-radius: 8px;
+    background: rgb(212, 246, 246);
+    color: teal;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-family: Baskervville;
+    margin-bottom: 10px;
+}
+
+/* On Hover */
+#event-dropdown:hover {
+    border-color: #45a049;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* On Focus */
+#event-dropdown:focus {
+    border-color: #2e7d32;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.8);
+}
+
+/* Dropdown Options */
+#event-dropdown option {
+    padding: 10px;
+    background: rgb(212, 246, 246);
+    color: #333;
+}
+
+/* Customizing Scrollbar in Dropdown (for Webkit Browsers) */
+#event-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+#event-dropdown::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 10px;
+}
+
+#event-dropdown::-webkit-scrollbar-thumb:hover {
+    background-color: #388E3C;
+}
+
+/* ================ Donate page =============== */
+
+.qr-code {
+    text-align: center;
+    margin-top: 20px;
+    color: teal;
+}
+
+.qr-code img {
+    width: 200px;  /* Adjust size as needed */
+    height: auto;
+    border: 2px solid teal; /* Light border */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 2px;
+    background: white;
+    margin-top: 10px;
+}
+
+.bank-details {
+    margin-top: 30px;
+    color:teal;
+}
+
+.bank-details h2{
+    color:teal;
+    margin-bottom: 15px;
+}

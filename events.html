@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammayapan Charitable Trust: Reaching Out to those in Need</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container">
+        <!-- <h2>📅 Highlights</h2> -->
+        <h2>Highlights</h2>
+
+        <select id="event-dropdown">
+            <option value="">Select an event</option>
+        </select>
+
+        <h3 id="selected-date"></h3>
+        <div class="slideshowevent-container">
+            <button id="prev">⬅</button>
+            <div class="slideshowevent"></div>
+            <button id="next">➡</button>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Load JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const eventDropdown = document.getElementById("event-dropdown");
+            const slideshowContainer = document.querySelector(".slideshowevent");
+            const selectedDateText = document.getElementById("selected-date");
+            let currentEventImages = [];
+            let index = 0;
+
+            const events = [
+                { date: "2022-08-07", folder: "2022-08-07-Annadhanam", name: "Annadhanam" },
+                { date: "2022-08-07", folder: "2022-08-07-MedicalCamp", name: "Medical Camp" },
+                { date: "2023-04-23", folder: "2023-04-23-Inauguration", name: "Inauguration" }
+            ];
+
+            // Populate dropdown with formatted event names
+            events.forEach(event => {
+                let option = document.createElement("option");
+                option.value = event.folder;
+                option.textContent = `${event.date} - ${event.name}`;
+                eventDropdown.appendChild(option);
+            });
+
+            // Event listener for dropdown selection
+            eventDropdown.addEventListener("change", function () {
+                if (this.value) {
+                    const selectedEvent = events.find(event => event.folder === this.value);
+                    loadEventPhotos(selectedEvent.folder, selectedEvent.date);
+                }
+            });
+
+            function loadEventPhotos(folder, date) {
+                selectedDateText.textContent = "Event Date: " + date;
+                slideshowContainer.innerHTML = ""; // Clear previous images
+                currentEventImages = [];
+                index = 0;
+
+                console.log(`Loading images for folder: ${folder}`); // Debugging
+
+                let i = 1;
+                function loadNextImage() {
+                    let img = new Image();
+                    img.src = `./images/events/${folder}/image${i}.jpg`;
+                    img.alt = `Event Image ${i}`;
+                    img.style.position = "absolute";
+                    img.style.width = "100%";
+                    img.style.height = "100%";
+                    img.style.objectFit = "cover";
+                    img.style.transition = "opacity 1s ease-in-out";
+                    img.style.opacity = 0;
+
+                    img.onload = function () {
+                        console.log(`Loaded: ${img.src}`);
+                        slideshowContainer.appendChild(img);
+                        currentEventImages.push(img);
+                        
+                        if (currentEventImages.length === 1) {
+                            img.style.opacity = 1;
+                            img.classList.add("active");
+                        }
+
+                        i++;
+                        loadNextImage(); // Try loading the next image
+                    };
+
+                    img.onerror = function () {
+                        console.log(`No more images found after image${i - 1}`);
+                        if (currentEventImages.length === 0) {
+                            slideshowContainer.innerHTML = "<p>No images available for this event.</p>";
+                        }
+                    };
+                }
+
+                loadNextImage();
+            }
+
+            function changeImage(direction) {
+                if (currentEventImages.length > 1) {
+                    console.log("Switching Image");
+                    currentEventImages[index].style.opacity = 0; // Hide current
+                    currentEventImages[index].style.display = "none";
+
+                    index = (index + direction + currentEventImages.length) % currentEventImages.length;
+
+                    currentEventImages[index].style.display = "block";
+                    setTimeout(() => {
+                        currentEventImages[index].style.opacity = 1; // Show next image
+                    }, 100);
+                }
+            }
+
+            document.getElementById("prev").addEventListener("click", () => changeImage(-1));
+            document.getElementById("next").addEventListener("click", () => changeImage(1));
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Load header
+            fetch("header.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("header-placeholder").innerHTML = data)
+                .catch(error => console.error("Error loading header:", error));
+
+            // Load footer
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => document.getElementById("footer-placeholder").innerHTML = data)
+                .catch(error => console.error("Error loading footer:", error));
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ammayapan Charitable Trust: Reaching Out to Those in Need</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let slideshowContainer = document.querySelector(".slideshow");
+            let totalImages = 8; // Adjust based on the number of images you expect
+            let images = [];
+            
+            for (let i = 1; i <= totalImages; i++) {
+                let img = document.createElement("img");
+                img.src = `./images/home/image${i}.jpg`;
+                img.alt = `Slide ${i}`;
+                img.style.opacity = 0;
+                slideshowContainer.appendChild(img);
+                images.push(img);
+            }
+            
+            let index = 0;
+            function changeImage() {
+                images.forEach(img => img.style.opacity = 0);
+                images[index].style.opacity = 1;
+                index = (index + 1) % images.length;
+            }
+            setInterval(changeImage, 3000);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="donate.html">Donate Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="slideshow"></div>
+        <div class="caption">
+            <span class="small-text">Together we can</span>
+            <span class="large-text">Make a Difference</span>
+        </div>
+        <div class="running-text">
+            <p>வணக்கம் &#128591</p>
+            <p>கடந்த இரண்டு வருடங்களாக அம்மையப்பன் தொண்டு அறக்கட்டளை திருவண்ணாமலை மாவட்டம், 
+                நல்லவன் பாளையம் JH நகரில் தலைமை இடமாகக் கொண்டு பல்வேறு நலப்பணிகளில் ஈடுபட்டு வருகிறது. 
+                நமது அறக்கட்டளையின் சார்பில் அம்மையப்பன் முதியோர் இல்லம் திருவண்ணாமலை மாவட்டம் பவித்திரம் கிராமத்தில் 
+                இயற்கையான சூழ்நிலையில் செயல்பட உள்ளது. இங்கு 55 வயதிற்கு மேற்பட்ட ஆதரவற்ற மற்றும் கைவிடப்பட்ட பெண்கள் 
+                பயனுறும் வகையில் தங்குமிடம், உணவு மற்றும் மருத்துவ பராமரிப்பு அனைத்தும் சிறப்பான முறையில் இலவசமாக 
+                வழங்கப்பட உள்ளது என்பதை தங்களது மேலான பார்வைக்கு தெரிவித்துக் கொள்கிறோம். மேற்கூறிய வகையில் 
+                யாரேனும் தெரிந்த நபர்கள் இருந்தால் இங்கு தங்கி பயனைடய அவர்களுக்கு உதவிடுமாறு அன்புடன் கேட்டுக்கொள்கிறோம்.</p>
+
+            <p>  </p>
+            <p>  </p>
+            <p>  </p>
+            <p><b>சேர்மன்,</b><br>
+            <p><b>அம்மையப்பன் தொண்டு அறக்கட்டளை,</b><br>
+            <p><b>அம்மையப்பன் முதியோர் நலவாழ்வு இல்லம்,</b><br>
+            <p><b>பவித்திரம், திருவண்ணாமலை.</b><br>
+            <p><b>&#128241 : 9443091722</b></p>
+
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: 56/78, 14thA Cross, 2nd Main, Garden Layout, JP Nagar, Thiruvannamalai</p>
+        <p><h5>Email : ammayapan@gmail.com </h5></p>
+        <p><h5>Phone : +91 72893 83736</h5></p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourpage" target="_blank">
+                <img src="./images/icons/Facebook Icon.svg" alt="Facebook">
+            </a>
+            <a href="https://www.youtube.com/yourchannel" target="_blank">
+                <img src="./images/icons/YouTube Icon.svg" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank">
+                <img src="./images/icons/Instagram Icon.svg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -578,7 +578,7 @@ header img {
 .hamburger {
     display: none; /* Hide by default */
     cursor: pointer;
-    font-size: 24px;
+    font-size: 28px;
     /* padding: 10px; */
     background: none;
     border: none;
@@ -624,7 +624,5 @@ header img {
 
     .logo-container {
         flex:1;
-        max-width: 60px;
-        background-color: rgb(212, 246, 246);
     }
 }

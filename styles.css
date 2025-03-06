@@ -33,9 +33,9 @@ body {
     text-emphasis-color: white;
 } */
 
-header img {
+/* header img {
     height: 50px;
-}
+} */
 
 footer {
     background-color:teal ;
@@ -536,27 +536,9 @@ button:hover {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
 .imglogo {
     height: 50px;
     display: block;
-}
-
-
-
-.logo-container {
-    background-color: rgb(212, 246, 246);
-    padding: 5px;
-    border-radius: 5px; /* Optional: Adds rounded corners */
-    flex: 1; /* Pushes hamburger menu to the right */
 }
 
 header {
@@ -571,6 +553,10 @@ header {
     text-emphasis-color: white;
 }
 
+header img {
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+}
 
 .nav-menu {
     list-style: none;
@@ -595,6 +581,14 @@ header {
     padding: 10px;
 }
 
+.logo-container {
+    /* max-width: 60px; */
+    background-color: rgb(212, 246, 246);
+    /* padding: 5px; */
+    border-radius: 5px; 
+    /* flex: 1;  */
+}
+
 /* Show hamburger only on small screens */
 @media (max-width: 768px) {
     .hamburger {
@@ -610,9 +604,23 @@ header {
         right: 0;
         width: 200px;
         padding: 10px;
+        border-radius: 5px;
     }
 
     .nav-menu.active {
         display: flex;
+    }
+
+    /* .logo {
+        max-width: 120px; 
+        height: auto;
+    } */
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(212, 246, 246);
     }
 }

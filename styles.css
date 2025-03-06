@@ -550,6 +550,7 @@ header {
     padding: 10px 20px; /* 15px; */
     width: 100%;
     border-bottom: 3px solid #ddd;
+    position: relative;
     text-emphasis-color: white;
 }
 
@@ -578,7 +579,10 @@ header img {
     display: none; /* Hide by default */
     cursor: pointer;
     font-size: 24px;
-    padding: 10px;
+    /* padding: 10px; */
+    background: none;
+    border: none;
+    color: white;
 }
 
 .logo-container {
@@ -587,6 +591,8 @@ header img {
     /* padding: 5px; */
     border-radius: 5px; 
     /* flex: 1;  */
+    display: flex;
+    align-items: center;
 }
 
 /* Show hamburger only on small screens */
@@ -617,9 +623,7 @@ header img {
     } */
 
     .logo-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex:1;
         max-width: 60px;
         background-color: rgb(212, 246, 246);
     }

@@ -66,16 +66,7 @@ footer hr {
     font-size: 20px;
 }
 
-.logo-container {
-    background-color: rgb(212, 246, 246);
-    padding: 5px;
-    border-radius: 5px; /* Optional: Adds rounded corners */
-}
 
-.imglogo {
-    height: 50px; /* Reducing the size */
-    display: block;
-}
 
 nav ul {
     list-style: none;
@@ -549,6 +540,25 @@ button:hover {
 
 
 
+
+
+
+
+
+.imglogo {
+    height: 50px;
+    display: block;
+}
+
+
+
+.logo-container {
+    background-color: rgb(212, 246, 246);
+    padding: 5px;
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    flex: 1; /* Pushes hamburger menu to the right */
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -577,13 +587,13 @@ header {
     text-decoration: none;
 }
 
+/* Ensure hamburger is positioned to the right */
 .hamburger {
     display: none; /* Hide by default */
     cursor: pointer;
     font-size: 24px;
     padding: 10px;
 }
-
 
 /* Show hamburger only on small screens */
 @media (max-width: 768px) {
